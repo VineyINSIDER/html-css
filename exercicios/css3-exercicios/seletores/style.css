@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* em HTML id em CSS #
+   em HTML class em CSS .
+   Não se poder usar o mesmo ID para diferentes coisas, ja o class sim
+*/
+
+body{
+    background-color: rgb(196, 240, 225);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: green;
+
+}
+
+h1#principal{ /* o # representa o ID (identificador)*/
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+h2{
+    color: rgb(56, 87, 11);
+
+}
+
+.basico{
+    color: rgb(56, 87, 11);
+
+}
+
+.intermediario{
+    color: rgb(156, 156, 62);
+
+}
+
+.avançado{
+    color: rgb(255, 0, 0);
+
+}
+
+.destaque{
+    background-color: rgba(130, 199, 128, 0.438);
+}

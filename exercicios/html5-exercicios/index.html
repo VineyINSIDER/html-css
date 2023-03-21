@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icone do meu primeiro site programado em html.ico" type="image/x-icon">
+    <title>Aula1: HTML e CSS</title>
+    <style>
+        mark{
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+   <h1>Ola, Mundo!</h1>
+   
+    <hr>
+    <p>Primeiro grande passo para programar, estou aprendendo com os videos do gustavo guanabara</p>
+
+    <p>Este é meu primeiro site que estou criando!</p>
+
+    <p>Estou fazendo esse paragrafo para mostrar a quebra de linha, <br>como aqui por exemplo usando o comando "br"</p>
+
+    <!--Isso aqui é um exemplo de como fazer um comentario no codigo sem alterar no site-->
+
+    <p>Aprendendo a usar emojis:
+        <!--Atenção emojis são sempre feitos com &#x para representar o sistema hexadecimal-->
+        &#x1F596;
+        &#x1F913;
+
+    </p>
+
+    <p>Aqui vamos fazer um exemplo de como colocar uma imagem <br>
+        <img src="imagens/jett valorant.jfif" alt="logo HTML5">
+        <!--CTRL+Espace é um atalho que serve para encontrar arquivos que estão dentro de uma pasta-->
+    </p>
+
+    <p>A partir daqui estou fazendo uma hierarquia de titulos/subtitulos &downarrow;</p>
+
+    <h1>Titulo Principal</h1>
+    <h2>Introdução</h2>
+    <h3>Justificação da tematica</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quidem officiis dolor aut quibusdam magnam ullam rerum possimus odio consequuntur, tenetur vero voluptate illum voluptatum praesentium repellendus, modi quis et.</p> <!--Comando Lorem utlisado apenas para fazer uma representação de um paragrafo-->
+    <!--esses subtitulos/titulos vão de "h1 até h6"-->
+
+    <h1>Principais formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag B</p>
+    <p>Nessa frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG</p>
+    <!--os dois termos podem ser usados para a mesma coisa, porém o "strong" serve para como semântica, ja o "b" para forma-->
+    <h2>Italico/Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em italico</i> usando a tag I (não semântica)</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica)</p>
+    <!--Recomendavel usar HTML5 com tags com sentido de semântica e deixar a forma para CSS3-->
+
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também um <mark>texto marcado usando</mark> a tag MARK </p>
+    <!--a tag mark serve so parar marcar o texto, o style ja parte do principio do CSS3 mudando a cor do marca texto, porém também temos exemplo no inicio do codigo usando apenas o bloco de "style"-->
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+    <h2>Texto Subscrito/Sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <p>Para inserir coisas do tipo H<sub>2</sub>0</p>
+
+    <h1>Outras formatações</h1>
+    <h2>Codigo fonte/Pré-formatação</h2>
+    <p>O comando <code>document.getElementByID('teste')</code> é escrito em linguagem JavaScript</p>
+    <!--A tag code serve para indicar algo escrito em uma linguagem de codigo, para melhor leitura de espaçamento entre as letras-->
+    <pre>
+Essa tag "pre" serve para indicar que tudo oque escrevo dentro desse bloco de tag,
+ira ficar organizado da maneira
+que deixei. <!--shift+tab: atalho usado para mover o texto para a esquerda, e tab: para mover pra direita-->
+    </pre>
+
+    <h2>Citações simples/completas</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rapido</q></p>
+    <!--a tag "q" é usada para citações (recomendavel usar a tag ao invés das aspas normais!)-->
+    <p>Segundo tal site:</p>
+    <blockquote cite="(link do site)">
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </blockquote>
+    <!--Essa tag "blockquote" é utilizada para citações mais completas retiradas de algum livro ou site, o "blockquote city" é usado para se referir ao endereço de onde foi retirado a citação-->
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou gostando!</p>
+
+    <h1>Trabalhando com listas ordenadas:</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="1"> <!--tag "ol" serve para fazer um bloco de lista organizado, e o "type" para escolher a forma numeral a ser organizada-->
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+
+    </ol>
+    
+    <h2>Lista não ordenadas:</h2>
+    <ul type="circle">
+        <li>Pão</li>
+        <li>Alface</li>
+        <li>Feijão</li>
+        <li>Arroz</li>
+        
+    </ul>
+
+    <h2>Lista de definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteudo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+
+    <!--Os tags de definições ajudam nos mecanismos de busca dos navegadores, geralmente muito usadas-->
+    </dl>
+
+    <h1>Usando links externos</h1>
+    <p>Acessa ae o <a href="https://www.youtube.com/@CursoemVideo">canal do youtube</a> do mano que eu to aprendendo a fazer tudo isso aqui</p>
+    <p>Acessa ae o <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">canal do youtube</a> do mano que eu to aprendendo a fazer tudo isso aqui</p>
+    <!--o comando target"_blank" rel="external" , serve para redirecionar o link para outra aba e não substituir a do seu site-->
+
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira pagina do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda pagina</a></p>
+
+    <h1>Links para Donwload</h1>
+    <ul type="square">
+        <li><a href="" download="arquivo.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="" download="arquivo.zip" type="application/zip">Livro compactado em ZIP</a></li>
+        <!--Basta colocar os arquivos dentro dos " " do que queira ser baixado usando CTRL+Espace com o restante dos comandos apresentados acima -->
+     </ul>
+
+     <h1>Imagem dinâmica</h1>
+     <p>Tente abrir este site em varios dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador. </p>
+     <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        <!--A ordem de sequencia no comando source é primordial para o funcionamento-->
+     </picture>
+
+     <h1>Reproduzindo Audio</h1>
+     <p>Aprendendo a reproduzir audios em HTML5</p>
+     <audio preload="metadata" autoplay controls loop>
+        <source src="media/guanacast-33.mp3.mp3" type="audio/mpeg"> <!--mpeg = mp3-->
+        <source src="media/guanacast-33.ogg" type="audio/ogg">
+        <source src="media/guanacast-33.wav" type="audio/wav"><!--não recomendavel usar esse por causa do tamanho/peso do arquivo wav-->
+        <!--mp3,ogg,wav são arquivos de audios existentes para sites (usar todos os 3 arquivos de audio para funcionar em todos aparelhos)-->
+     </audio>
+
+     <h1>Inserindo videos hospedados localmente</h1>
+     <p>Este video esta hospedado no meu proprio servidor</p>
+    <video width="500" poster="imagens/limoes-capa.png" controls autoplay loop>
+        <source src="media/meu-video.mp4.mp4" type="video/mp4">
+        <source src="media/meu-video.m4v.m4v" type="video/m4v">
+        <source src="media/meu-video.webm.webm" type="video/webm">
+        <source src="media/meu-video.ogv.ogv" type="video/ogv">
+    </video>
+
+    <h1>Inserindo videos do Youtube</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+
+</body>
+</html>
